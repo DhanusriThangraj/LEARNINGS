@@ -15,4 +15,4 @@ ldpc_chunk_drive.sample(tr.pf_dd_chunk_data[i]); — calls ldpc_chunk_drive's sa
 
 ldpc_parity_drive.sample(tr.pf_dd_parity[i]); — calls ldpc_parity_drive's sample method.
 
-Your outer wrapper function in the coverage class (function void sample_parity(pf_aux_transaction tr)) can keep whatever custom name you want, while the inner covergroup call must always be .sample(...).
+Your outer wrapper function in the coverage class (function void sample_parity(pf_aux_transaction tr)) can keep whatever custom name you want, while the inner covergroup call must always be .sample(...).  
