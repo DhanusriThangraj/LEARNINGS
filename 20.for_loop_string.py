@@ -52,3 +52,45 @@ for	Iterates through the list
 Important: split() is a built-in Python string method. It does not modify the original string.
 
 In simple words: for part in key.split("."): breaks a hierarchical name into individual components and processes them one by one.
+
+The split() method can be used with any string variable, not just key.
+1. Using key.split(".")
+key = "dut.axi.master"for part in key.split("."):    print(part)
+
+
+
+Output:
+dut
+axi
+master
+
+
+2. Using values.split(".")
+values = "10.20.30"for part in values.split("."):    print(part)
+
+
+
+Output:
+10
+20
+30
+
+
+3. What is the difference?
+Expression	Meaning
+key.split(".")	Splits the string stored in key
+values.split(".")	Splits the string stored in values
+
+Both use the same split() method.
+4. Important: What if values is a list?
+values = [10, 20, 30]values.split(".")
+
+
+
+This gives an error because split() is a string method, not a list method.
+
+Remember:
+- split() → String method.
+- "." → Separator.
+- part → Each separated element.
+You can use split() with any string variable, regardless of its name.
