@@ -7,7 +7,7 @@ class Student:    def __init__(self, name, age):        self.name = name        
 
 
 Output:
-{'name': 'Dhanusri', 'age': 23}
+{'name': 'Dhanusri', 'age': 23} 
 
 
 
